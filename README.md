@@ -45,6 +45,44 @@ While a presentation is running on a Windows computer, the presenter can use the
 
 ---
 
+## Screenshots
+
+The current release includes matching Windows desktop and Android experiences for both connection and connected states.
+
+### Windows Desktop — Ready to Connect
+
+<p align="center">
+  <img src="docs/images/ppt-runner-desktop-ready.png" alt="PPT Runner Windows desktop ready to connect" width="92%"/>
+</p>
+
+The Windows desktop agent starts a temporary session, displays the QR code, and waits for the Android controller.
+
+### Windows Desktop — Connected
+
+<p align="center">
+  <img src="docs/images/ppt-runner-desktop-connected.png" alt="PPT Runner Windows desktop connected" width="92%"/>
+</p>
+
+Once paired, the desktop shows the active transport and the available remote-control actions.
+
+### Android — Connected
+
+<p align="center">
+  <img src="docs/images/ppt-runner-android-connected.png" alt="PPT Runner Android connected screen" width="38%"/>
+</p>
+
+The Android controller shows the active transport and the physical Volume Up / Volume Down mappings.
+
+### Android — Ready to Connect
+
+<p align="center">
+  <img src="docs/images/ppt-runner-android-ready.png" alt="PPT Runner Android ready to connect screen" width="38%"/>
+</p>
+
+The initial Android screen guides the presenter to scan the QR code displayed by the Windows application.
+
+---
+
 ## Architecture
 
 PPT Runner uses a **local-first architecture** with a secure relay fallback.
