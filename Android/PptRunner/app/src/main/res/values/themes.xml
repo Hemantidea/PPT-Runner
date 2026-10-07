@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.PptRunner"
+        parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="android:windowBackground">#05080D</item>
+
+    </style>
+
+    <style name="Theme.PptRunner"
+        parent="Base.Theme.PptRunner" />
+
+</resources>

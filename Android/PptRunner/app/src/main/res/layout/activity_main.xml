@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#05080D"
+    android:paddingStart="20dp"
+    android:paddingTop="14dp"
+    android:paddingEnd="20dp"
+    android:paddingBottom="12dp">
+
+    <!-- ===================================================== -->
+    <!-- HEADER                                                -->
+    <!-- ===================================================== -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif"
+            android:letterSpacing="0.07"
+            android:text="PPT RUNNER"
+            android:textColor="#04D9F5"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtStatusDot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="●"
+            android:textColor="#667281"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+
+    <!-- ===================================================== -->
+    <!-- MAIN CONTENT                                          -->
+    <!-- ===================================================== -->
+
+    <LinearLayout
+        android:id="@+id/mainContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp">
+
+
+        <!-- ================================================= -->
+        <!-- HERO                                               -->
+        <!-- ================================================= -->
+
+        <FrameLayout
+            android:id="@+id/heroCard"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:id="@+id/heroImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="Phone scanning the PPT Runner QR code"
+                android:scaleType="centerInside"
+                android:src="@drawable/ppt_runner_hero" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent" />
+
+        </FrameLayout>
+
+
+        <!-- ================================================= -->
+        <!-- STATUS                                             -->
+        <!-- ================================================= -->
+
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:letterSpacing="0.01"
+            android:text="READY TO CONNECT"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+        <!-- ================================================= -->
+        <!-- CONNECTION STATUS                                 -->
+        <!-- ================================================= -->
+
+        <LinearLayout
+            android:id="@+id/connectionStatusRow"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginTop="9dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/connectionSpinner"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="8dp"
+                android:indeterminate="true"
+                android:indeterminateTint="#FFC107" />
+
+            <TextView
+                android:id="@+id/txtConnectionMode"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:background="@drawable/bg_status_chip"
+                android:gravity="center"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="LOCAL NETWORK"
+                android:textColor="#04D9F5"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <!-- ================================================= -->
+        <!-- DESCRIPTION                                       -->
+        <!-- ================================================= -->
+
+        <TextView
+            android:id="@+id/txtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:lineSpacingExtra="2dp"
+            android:maxLines="2"
+            android:text="Scan the QR shown on the presentation computer"
+            android:textColor="#8994A6"
+            android:textSize="16sp" />
+
+
+        <!-- ================================================= -->
+        <!-- REMOTE CONTROLS LABEL                             -->
+        <!-- ================================================= -->
+
+        <TextView
+            android:id="@+id/txtRemoteLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:letterSpacing="0.12"
+            android:text="REMOTE CONTROLS"
+            android:textColor="#516273"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+
+        <!-- ================================================= -->
+        <!-- CONNECTED COMMANDS                                -->
+        <!-- ================================================= -->
+
+        <LinearLayout
+            android:id="@+id/commandPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <!-- NEXT -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="104dp"
+                android:background="@drawable/bg_command_card"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="16dp"
+                android:paddingEnd="18dp">
+
+                <TextView
+                    android:layout_width="62dp"
+                    android:layout_height="62dp"
+                    android:background="@drawable/bg_command_icon"
+                    android:gravity="center"
+                    android:text="↑"
+                    android:textColor="#04D9F5"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="46dp"
+                    android:layout_marginStart="16dp"
+                    android:background="#20303D" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="VOLUME UP"
+                        android:textColor="#FFFFFF"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="NEXT SLIDE"
+                        android:textColor="#8994A6"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!-- PREVIOUS -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="104dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/bg_command_card"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="16dp"
+                android:paddingEnd="18dp">
+
+                <TextView
+                    android:layout_width="62dp"
+                    android:layout_height="62dp"
+                    android:background="@drawable/bg_command_icon"
+                    android:gravity="center"
+                    android:text="↓"
+                    android:textColor="#04D9F5"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="46dp"
+                    android:layout_marginStart="16dp"
+                    android:background="#20303D" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="VOLUME DOWN"
+                        android:textColor="#FFFFFF"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="PREVIOUS SLIDE"
+                        android:textColor="#8994A6"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- ================================================= -->
+        <!-- SCAN                                               -->
+        <!-- ================================================= -->
+
+        <Button
+            android:id="@+id/btnScan"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_scan_button"
+            android:backgroundTint="@null"
+            android:gravity="center"
+            android:minHeight="0dp"
+            android:text="SCAN QR"
+            android:textAllCaps="false"
+            android:textColor="#031015"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <!-- ================================================= -->
+        <!-- DISCONNECT                                         -->
+        <!-- ================================================= -->
+
+        <Button
+            android:id="@+id/btnDisconnect"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_disconnect"
+            android:backgroundTint="@null"
+            android:gravity="center"
+            android:minHeight="0dp"
+            android:text="DISCONNECT"
+            android:textAllCaps="false"
+            android:textColor="#FF6570"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+    <!-- ===================================================== -->
+    <!-- FOOTER                                                -->
+    <!-- ===================================================== -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="48dp"
+            android:layout_height="1dp"
+            android:background="#22313E" />
+
+        <Button
+            android:id="@+id/btnInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:background="@android:color/transparent"
+            android:backgroundTint="@null"
+            android:minHeight="44dp"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:text="INFO"
+            android:textAllCaps="true"
+            android:textColor="#7F8B9C"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="48dp"
+            android:layout_height="1dp"
+            android:background="#22313E" />
+
+    </LinearLayout>
+
+</LinearLayout>

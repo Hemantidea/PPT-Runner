@@ -1,0 +1,45 @@
+PPT RUNNER — SOURCE AND NON-COMMERCIAL LICENSE
+
+Copyright (c) 2026 Hemant Verma.
+All rights reserved.
+
+PPT Runner is a software project developed by Hemant Verma.
+
+Permission is granted to any person obtaining a copy of this source
+code to view, study, reproduce, modify, and use the source code solely
+for the following purposes:
+
+- personal use;
+- educational use;
+- academic use;
+- research and experimentation;
+- non-commercial evaluation and demonstration.
+
+Commercial use is not permitted without prior written permission from
+the copyright holder, Hemant Verma.
+
+Commercial use includes, but is not limited to:
+
+- selling the software or a substantially similar product;
+- incorporating the software into a commercial product or service;
+- using the software as part of a paid service;
+- distributing modified versions for commercial purposes;
+- offering the software or its functionality to customers for payment.
+
+Redistribution of the source code for permitted non-commercial purposes
+is allowed provided that this copyright notice and licence are retained.
+
+No trademark, branding, or other intellectual-property rights are
+granted except for the limited permissions expressly stated above.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED, TO THE EXTENT PERMITTED BY APPLICABLE LAW.
+
+This licence does not constitute legal advice, legal certification,
+court approval, or government endorsement.
+
+For commercial licensing or written permission, contact:
+
+Hemant Verma
+LinkedIn:
+https://www.linkedin.com/in/hemant-verma-ind/
