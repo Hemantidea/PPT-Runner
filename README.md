@@ -65,15 +65,6 @@ The Windows desktop agent starts a temporary session, displays the QR code, and 
 
 Once paired, the desktop shows the active transport and the available remote-control actions.
 
-### Android — Connected
-
-<p align="center">
-  <img src="docs/images/ppt-runner-android-connected.png" alt="PPT Runner Android connected screen" width="38%"/>
-  <img src="docs/images/ppt-runner-android-ready.png" alt="PPT Runner Android ready to connect screen" width="38%"/>
-</p>
-
-The Android controller shows the active transport and the physical Volume Up / Volume Down mappings.
-
 ### Android
 
 <p align="center">
