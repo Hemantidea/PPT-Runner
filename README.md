@@ -69,17 +69,21 @@ Once paired, the desktop shows the active transport and the available remote-con
 
 <p align="center">
   <img src="docs/images/ppt-runner-android-connected.png" alt="PPT Runner Android connected screen" width="38%"/>
+  <img src="docs/images/ppt-runner-android-ready.png" alt="PPT Runner Android ready to connect screen" width="38%"/>
 </p>
 
 The Android controller shows the active transport and the physical Volume Up / Volume Down mappings.
 
-### Android — Ready to Connect
+### Android
 
 <p align="center">
   <img src="docs/images/ppt-runner-android-ready.png" alt="PPT Runner Android ready to connect screen" width="38%"/>
-</p>
+  <img src="docs/images/ppt-runner-android-connected.png" alt="PPT Runner Android connected screen" width="38%"/>
+</p></p>
 
 The initial Android screen guides the presenter to scan the QR code displayed by the Windows application.
+
+The Android controller shows the active transport and the physical Volume Up / Volume Down mappings.
 
 ---
 
